@@ -1,76 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Adar</title>
-    <link rel="stylesheet" href="C:\Users\אדר\Documents\Web Development\My Site\css/style.css">
-    <link rel="icon" href="C:\Users\אדר\Documents\Web Development\My Site\favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Frontend Mentor | Product preview card component</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
-
+  <link href="C:\Users\אדר\Documents\Web Development\Personal Site\challeng2\space-tourism-website-main\css\style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
 </head>
-
 <body>
-    <div class="top-container">
-        <img class="top-cloud" src="C:\Users\אדר\Documents\Web Development\My Site\cloud.png" alt="cloud-img">
-        <h1>I'm Shay.</h1>
-        <h2>Everything <Span class="pro">you</Span> dream for.</h2>
-        <img class="bottom-cloud" src="C:\Users\אדר\Documents\Web Development\My Site\cloud.png" alt="cloud-img">
-        <img src="C:\Users\אדר\Documents\Web Development\My Site\mountain.png" alt="mountain-img">
-    </div>
-    <div class="middle-container">
-        <div class="profile">
-            <img class="circular--square"
-                src="https://pbs.twimg.com/profile_images/378800000491650806/8a79a92302289f5dab0904f5b5672244_400x400.jpeg"
-                alt="shay's photo">
-            <h2>Hello.</h2>
-            <p class="intro">Hey everyone, nice to meet you all. Welcome to my Site.
-            </p>
-        </div>
-        <hr>
-        <div class="skills">
-            <h2>My Skills.</h2>
-            <div class="skill-row">
-                <img class="crown-img"
-                    src="data:image/jpeg;base64,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"
-                    alt="king's crown">
-
-                <h3>being good</h3>
-                <p>All over my life i've been good in everything i did</p>
-            </div>
-            <div class="skill-row">
-                <img class="barbi-img" src="https://cdn.fansshare.com/photo/barbie/barbi-311540272.jpg" alt="skills">
-                <h3>beautifullness</h3>
-                <p>Barbi here is just the closest object that can resembel my beauty</p>
-            </div>
-        </div>
-        <hr>
-        <div class="contact-me">
-            <h2>Get In Touch</h2>
-            <h3>If you think it will benefit you</h3>
-            <p class="contact-message">It's not that easy tough</p>
-            <a class="btn" href="mailto:adarhayut8@gmail.com">CONTACT ME</a>
-        </div>
-    </div>
-
-
-    <div class="bottom-container">
-        <a class="footer-link" href="https://il.linkedin.com/in/shay-averbuch-322534239">LinkedIn</a>
-        <a class="footer-link" href="https://twitter.com/shay_averbuch">Twitter</a>
-        <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-        <p class="change">© Shay Averbuch</p>
-    </div>
-
-
-
-
-
+  <img class="perfume-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMBip4urJnQEQdh7MmgFciVJo14h8ouZpu7Q&usqp=CAU" alt="perfume-img">
+  <div class="main-container">
+  <P>PERFUME</P> 
+    <h1>Gabrielle Essence Eau De Parfum
+    </h1>
+    <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+      Perfumer-Creator for the House of CHANEL.</p>
+    <h2>  $149.99
+      </h2>
+      <p class="close">$169.99</p>
+      <button type="button" class="btn" href="mailto:adarhayut8@gmail.com">🛒add to cart</a>
+    
+ 
+</div>
+  
+ 
 </body>
-
 </html>
+
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Montserrat:wght@300&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Montserrat:wght@300;500;700&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
